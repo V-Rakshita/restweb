@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Administration - Bold Bites</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f6f1;
+            color: #4a3c31;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #6b4c3b;
+            margin-bottom: 40px;
+        }
+
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .member {
+            background-color: white;
+            width: 250px;
+            text-align: center;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 6px 18px rgba(74, 60, 49, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(74, 60, 49, 0.2);
+        }
+
+        .member img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .member h3 {
+            margin-top: 15px;
+            color: #6b4c3b;
+            font-size: 18px;
+        }
+
+        .member p {
+            margin: 5px 0;
+            color: #5a4a3a;
+            font-size: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .member {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Our Administration</h1>
+
+    <div class="team">
+        <div class="member">
+            <img src="admin1.jpg" alt="Person 1" />
+            <h3>Ramya</h3>
+            <p>Founder & CEO</p>
+        </div>
+        <div class="member">
+            <img src="admin2.jpg" alt="Person 2" />
+            <h3>Anita</h3>
+            <p>Head Chef</p>
+        </div>
+        <div class="member">
+            <img src="admin3.jpg" alt="Person 3" />
+            <h3>Rahul</h3>
+            <p>Operations Manager</p>
+        </div>
+        <div class="member">
+            <img src="admin4.jpg" alt="Person 4" />
+            <h3>Neha</h3>
+            <p>General Manager</p>
+        </div>
+        <div class="member">
+            <img src="admin5.jpg" alt="Person 5" />
+            <h3>Vikram</h3>
+            <p>Marketing Head</p>
+        </div>
+        <div class="member">
+            <img src="admin6.jpg" alt="Person 6" />
+            <h3>Sara</h3>
+            <p>Customer Relations</p>
+        </div>
+    </div>
+</body>
+
+</html>

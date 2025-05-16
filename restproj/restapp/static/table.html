@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book a Table - Bold Bites</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f6f1;
+            color: #4a3c31;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(74, 60, 49, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #6b4c3b;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #e0d9ce;
+            border-radius: 6px;
+            font-size: 15px;
+            font-family: inherit;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        button {
+            background-color: #b89b59;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #9a8244;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Book a Table</h1>
+        <form action="thankyou.html" method="GET">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="phone">Contact Number</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required />
+
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time" required />
+
+            <label for="guests">Number of Guests</label>
+            <select id="guests" name="guests" required>
+                <option value="">Select</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6+ People</option>
+            </select>
+
+            <label for="message">Special Requests</label>
+            <textarea id="message" name="message" placeholder="Any special instructions..."></textarea>
+
+            <button type="submit">Reserve Table</button>
+        </form>
+    </div>
+</body>
+
+</html>
